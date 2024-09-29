@@ -72,7 +72,7 @@ private:
     QHBoxLayout *ledHLayout        = nullptr;
     QVBoxLayout *socketLogsVLayout = nullptr;
     QHBoxLayout *logsHLayout       = nullptr;
-    //QHBoxLayout *zoomHLayout     = nullptr; /* TODO: might be useless */
+    QHBoxLayout *zoomHLayout       = nullptr;
 
     /* Interactives */
     QCheckBox   *logsCheckBox = nullptr;
@@ -98,7 +98,10 @@ private:
     QLabel *socketLabel  = nullptr;
     bool    socketStatus = false;
 
-    QTextEdit   *logsTxtBox   = nullptr;
+    QTextEdit *logsTxtBox        = nullptr;
+    /* Clickable Label implemented as QPushButton for the clicked event */
+    QPushButton *zoomPlusLabel   = nullptr;
+    QPushButton *zoomMinusLabel  = nullptr;
 
     /* Spacers */
     QSpacerItem *rowSpacers[3];
