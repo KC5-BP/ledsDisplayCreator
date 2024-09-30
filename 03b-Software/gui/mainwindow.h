@@ -9,6 +9,7 @@
 #include <QLabel>
 #include <QLineEdit>
 #include <QMenuBar>
+#include <QMovie>
 #include <QPushButton>
 #include <QSlider>
 #include <QSpacerItem>
@@ -86,7 +87,7 @@ private:
 
     QSlider *zoomSlider;
 
-    QPushButton *btns[2];
+    QPushButton *btn;
 
     /* Labels, Datas & Stuffs */
     QLabel *ipLabel = nullptr;
@@ -95,8 +96,10 @@ private:
     QLabel *portLabel = nullptr;
     int     port      = 5000;
 
-    QLabel *socketLabel  = nullptr;
-    bool    socketStatus = false;
+    QLabel *socketLabel      = nullptr;
+    bool    socketStatus     = false;
+    QLabel *socketMovieLabel = nullptr;
+    QMovie *socketMovie      = nullptr;
 
     QTextEdit *logsTxtBox        = nullptr;
     /* Clickable Label implemented as QPushButton for the clicked event */
@@ -106,5 +109,6 @@ private:
     /* Spacers */
     QSpacerItem *rightJustifSpacers[3];
     QSpacerItem *logsAlignmentSpacer;
+    QSpacerItem *socketMovieSpacer;
 };
 #endif // MAINWINDOW_H
