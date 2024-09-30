@@ -104,7 +104,7 @@ private:
     QPushButton *zoomMinusLabel  = nullptr;
 
     /* Spacers */
-    QSpacerItem *rowSpacers[3];
-    QSpacerItem *colSpacers[3];
+    QSpacerItem *rightJustifSpacers[3];
+    QSpacerItem *logsAlignmentSpacer;
 };
 #endif // MAINWINDOW_H
